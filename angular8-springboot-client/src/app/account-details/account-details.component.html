@@ -1,0 +1,21 @@
+<p>account-details works!</p>
+
+<h2>Account Details</h2>
+<hr/>
+
+<div *ngIf="account">
+  <div>
+    <label><b>Id: </b></label> {{account.id}}
+  </div>
+  <div>
+    <label><b>Owner Name: </b></label> {{account.ownerName}}
+  </div>
+  <div>
+    <label><b>Balance: </b></label> {{account.balance}}
+  </div>
+</div>
+
+<br>
+<br>
+
+<button (click)="list()" class="btn btn-primary">Back to Account List</button><br>

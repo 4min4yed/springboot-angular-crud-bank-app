@@ -12,9 +12,11 @@ import com.example.bank.model.Account;
 import com.example.bank.service.AccountService;
 
 @Validated
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1/accounts")
 public class AccountController {
+    
 
     private final AccountService service;
 
