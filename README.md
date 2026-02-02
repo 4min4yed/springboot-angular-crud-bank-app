@@ -44,7 +44,10 @@ spring.datasource.password=secret
 Prerequisites
 Node.js (v14+)
 
-Angular CLI (npm install -g @angular/cli)
+Angular CLI 
+```bash
+npm install -g @angular/cli
+```
 
 Steps to start:
 Navigate to the client folder:
@@ -58,11 +61,10 @@ Install dependencies:
 npm install
 ```
 Launch the application:
-
 ```bash
 ng serve
 ```
-Access the UI: Open http://localhost:4200 in your browser.
+# Access the UI: Open http://localhost:4200 in your browser.
 
 3. Testing the API
 Sample JSON Responses
