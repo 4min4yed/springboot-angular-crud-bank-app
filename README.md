@@ -4,7 +4,22 @@ An example project: Angular SPA frontend (client) + Spring Boot RESTful API back
 
 ---
 
-## How to run (Backend only) 🔧
+## How to run (Backend only)
+Build: ```.\mvnw.cmd spring-boot:run```
+Start MySQL: ```docker-compose up -d```
+
+## Test
+
+{"id":2,"ownerName":"Charlie Updated","balance":1200.0}
+C:\Users\Mega-PC>curl.exe -i -X POST -H "Content-Type: application/json" -d "{\"ownerName\":\"Charlie Ayed\",\"balance\":1200.0,\"currency\":\"USD\"}" http://localhost:8081/api/v1/accounts
+HTTP/1.1 201
+
+{"id":3,"ownerName":"Charlie Ayed","balance":1200.0}
+>curl.exe -i http://localhost:8081/api/v1/accounts
+HTTP/1.1 200
+Content-Type: application/json
+
+[{"id":2,"ownerName":"Charlie Updated","balance":1200.00},{"id":3,"ownerName":"Charlie Ayed","balance":1200.00}]
 
 ### Prerequisites
 - Java 11 or later
