@@ -1,25 +1,26 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <!-- Links -->
-  <ul class="navbar-nav">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav p-2"> 
+    
     <li class="nav-item">
-      <a routerLink="accounts" class="nav-link" routerLinkActive="active">Account List</a>
+      <button routerLink="/accounts" class="btn btn-primary me-2" routerLinkActive="active">
+        Account List
+      </button>
     </li>
+
     <li class="nav-item">
-      <a routerLink="add" class="nav-link" routerLinkActive="active">Add Account</a>
+      <button routerLink="/create" class="btn btn-success" routerLinkActive="active">
+        Add Account
+      </button>
     </li>
+
   </ul>
 </nav>
 
-<div class="container">
-  <br>
-  <h2 style="text-align: center;">{{title}}</h2>
-  <hr>
+<div class="container mt-4">
   <div class="card">
     <div class="card-body">
+      <h2 class="card-title text-center mb-4">Accounts Manager</h2>
       <router-outlet></router-outlet>
     </div>
   </div>
 </div>
-
-<footer class="footer">
-</footer>
